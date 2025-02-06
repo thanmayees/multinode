@@ -35,7 +35,7 @@ pipeline {
             steps {
                 echo 'Testing application...'
                 bat '''
-                python3 ${WORKSPACE}/test_app.py
+                python ${WORKSPACE}/test_app.py
                 '''
             }
         }
